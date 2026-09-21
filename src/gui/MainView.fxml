@@ -7,23 +7,23 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
   <content>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="257.0" prefWidth="469.0">
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="246.0" prefWidth="600.0">
          <children>
-            <VBox prefHeight="228.0" prefWidth="399.0">
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0" prefWidth="599.0">
                <children>
-                  <MenuBar>
+                  <MenuBar maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="601.0" VBox.vgrow="ALWAYS">
                     <menus>
                       <Menu mnemonicParsing="false" text="Cadastro">
                         <items>
-                          <MenuItem mnemonicParsing="false" text="Vendedor" />
-                              <MenuItem mnemonicParsing="false" text="Departamento" />
+                          <MenuItem fx:id="menuItemVendedor" mnemonicParsing="false" onAction="#onMenuItemVendedorAction" text="Vendedor" />
+                              <MenuItem fx:id="MenuItemDepartamento" mnemonicParsing="false" onAction="#onMenuItemDepartamentoAction" text="Departamento" />
                         </items>
                       </Menu>
                       <Menu mnemonicParsing="false" text="Help">
                         <items>
-                          <MenuItem mnemonicParsing="false" text="About" />
+                          <MenuItem fx:id="MenuItemAbout" mnemonicParsing="false" onAction="#onMenuItemAboutAction" text="About" />
                         </items>
                       </Menu>
                     </menus>
